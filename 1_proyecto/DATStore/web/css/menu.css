@@ -1,0 +1,504 @@
+/* CSS Document */
+a:link {
+	color: #0000aa;
+}
+
+a:visited {
+	color: #0000aa;
+}
+
+body,td,th {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #333333;
+	margin-top:0px;
+	margin-left:0px;
+	background-color:#5E5E5E;
+}
+
+a {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+a:hover {
+	color: #ff0000;
+}
+
+a:active {
+	color: #0000aa;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+h1 {
+	font-size: 13px;
+	color: #FFFFFF;
+}
+
+h2 {
+	font-size: 11px;
+	color: #000000;
+}
+
+.estiloMenuTD{
+	color: #FFFFFF;
+	background-color:#C9E9F8;
+}
+
+.Estilo5 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #006589;
+	font-weight: bold;
+	font-style: normal;
+	text-transform: uppercase;
+}
+.Estilo6 {
+	background-image: url(../images/transmin.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+/***************************************************************************
+***************** Estilos de configuración del menú desplegable.************
+*******************************************************************************/
+#dhtmlgoodies_menu ul li ul {
+	display: none; /* Necesario para visualizarse bien en opera */
+}
+
+#dhtmlgoodies_menu {
+	visibility: hidden;
+}
+
+#dhtmlgoodies_menu ul {
+	margin: 0px; /* Sin sangria */
+	padding: 0px; /* Sin sangria */
+}
+
+#dhtmlgoodies_menu li {
+	list-style-type: none; /* Sin iconos */
+}
+
+#dhtmlgoodies_menu a {
+	margin: 0px;
+	padding: 0px;
+}
+
+/* Estilos de la estética del menú. Aquí puedes modificarlos de acuerdo al estilo de tu web
+Estilos que se aplican a todo el menú*/
+#dhtmlgoodies_menu ul {
+	border: 1px solid #1EBCF9;
+	background-color:#FDF9EA;
+	padding: 1px;
+}
+
+#dhtmlgoodies_menu ul.menuBlock1 {
+	/* Barra de menú - elementos del menu principal*/
+	border: 0px;
+	padding: 1px;
+	border: 1px solid #5E5E5E;
+	background-color: #5E5E5E;
+	overflow: visible;
+}
+
+#dhtmlgoodies_menu ul.menuBlock1 a{
+	color:#FFFFFF;
+}
+#dhtmlgoodies_menu ul.menuBlock2 {
+	/* Barra de menú - elementos del menu principal*/
+	border: 0px;
+	padding: 1px;
+	border: 1px solid #555;
+}
+
+#dhtmlgoodies_menu a {
+	color:#000000;
+	text-decoration: none;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+/* Estilos del menú principal. El que esta siempre visible */
+#dhtmlgoodies_menu .currentDepth1 {
+	padding-left: 35px;
+	padding-right: 35px;
+	border: 1px solid #909090;/*borde de la barra de menú*/
+}
+
+#dhtmlgoodies_menu .currentDepth1over {
+	padding-left: 35px;
+	padding-right: 35px;
+	background-color: #3F7C59;
+	border: 1px solid #000;
+}
+
+#dhtmlgoodies_menu .currentDepth1 a {
+	font-weight: bold;
+}
+
+#dhtmlgoodies_menu .currentDepth1over a {
+	color: #FFF;
+	font-weight: bold;
+}
+
+/* Estilos submenu nivel 1 */
+#dhtmlgoodies_menu .currentDepth2 {
+	padding-right: 2px;
+	list-style-type:none;
+	border: 1px solid #FDF9EA;/*bordes de el menu desplegable */
+}
+
+#dhtmlgoodies_menu .currentDepth2over {
+	padding-right: 5px;
+	background-color: #E2EBED;
+	border: 1px solid #000;
+}
+
+#dhtmlgoodies_menu .currentDepth2over a {
+	color: #000;
+}
+
+/* Estilos submenu nivel 2 */
+#dhtmlgoodies_menu .currentDepth3 {
+	padding-right: 2px;
+	border: 1px solid #FFF;
+	list-style-type:none;
+}
+
+#dhtmlgoodies_menu .currentDepth3over {
+	padding-right: 5px;
+	background-color: #EDE3EB;
+	border: 1px solid #000;
+}
+
+/* Estilos submenu nivel 3 */
+#dhtmlgoodies_menu .currentDepth4 {
+	padding-right: 5px;
+	border: 1px solid #FFF;
+}
+
+#dhtmlgoodies_menu .currentDepth4over {
+	padding-right: 5px;
+	background-color: #EBEDE3;
+	border: 1px solid #000;
+}
+
+
+/*******************************************************************
+*************     Estilos de Inputs  *******************************
+*******************************************************************/
+.input{
+    BORDER-RIGHT: #afc4d5 1px solid;
+    BORDER-TOP: #afc4d5 1px solid;
+    BORDER-LEFT: #afc4d5 1px solid;
+    BORDER-BOTTOM: #afc4d5 1px solid
+}
+.check{
+    BORDER-RIGHT:  0px ;
+    BORDER-TOP:  0px ;
+    BORDER-LEFT: 0px ;
+    BORDER-BOTTOM:  0px ;
+	
+}
+.textarea{
+    BORDER-RIGHT: #afc4d5 1px solid;
+    BORDER-TOP: #afc4d5 1px solid;
+    FONT-SIZE: 10pt;
+    BORDER-LEFT: #afc4d5 1px solid;
+    LINE-HEIGHT: normal;
+    BORDER-BOTTOM: #afc4d5 1px solid;
+    font-family:Arial, Helvetica, sans-serif;/*Verdana, Arial, Helvetica, sans-serif;/*Tahoma, 'Microsoft Sans Serif', Arial;/*Verdana;/*Verdana,Helvetica;/* Tahoma, 'Microsoft Sans Serif';/*Verdana,Helvetica;*/
+}
+.text{
+    BORDER-RIGHT: #afc4d5 1px solid;
+    BORDER-TOP: #afc4d5 1px solid;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: #afc4d5 1px solid;
+    LINE-HEIGHT: normal;
+    BORDER-BOTTOM: #afc4d5 1px solid;
+    
+}
+.pie{
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Tahoma, 'Microsoft Sans Serif'
+}
+.boton{
+   font-size:10px;
+	font-family:Verdana,Helvetica;
+	font-weight:bold;
+	color:white;
+	text-decoration:underline;
+	background:#0166CB;
+	border:0px;
+	width:80px;
+	height:22px;
+}
+
+#error{	
+    border:#660000 2px dashed;
+    background-color:#FF0000;
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 16px;
+    COLOR: #FFFFFF;
+    FONT-FAMILY: Verdana;
+    TEXT-ALIGN: center;
+    padding-bottom:5px;
+    width:600px;	
+}
+
+#error2{	
+    border:#660000 2px dashed;
+    background-color:#FF0000;
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 14px;
+    COLOR: #FFFFFF;
+    FONT-FAMILY: Verdana;
+    TEXT-ALIGN: center;
+    padding-bottom:5px;
+    width:100%;	
+}
+
+#mensaje{
+	border:#204630 2px dashed;
+    background-color:#BDF0B5;
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 16px;
+    COLOR: #000000;
+    FONT-FAMILY: Verdana;
+    TEXT-ALIGN: center;
+    padding-bottom:5px;
+    width:550px;
+}
+
+#mensaje2{
+	border:#204630 2px dashed;
+    background-color:#BDF0B5;
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 14px;
+    COLOR: #000000;
+    FONT-FAMILY: Verdana;
+    TEXT-ALIGN: center;
+    padding-bottom:5px;
+    width:100%;
+}
+
+#ayuda{
+	border:#204630 2px dashed;
+    background-color:#FFFF80;
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 16px;
+    COLOR: #000000;
+    FONT-FAMILY: Verdana;
+    TEXT-ALIGN: center;
+    padding-bottom:5px;
+    width:550px;
+    display:none;
+}
+/*****************************************************************
+********************    TABLAS     *******************************
+******************************************************************/
+TABLE.tFormulario{   
+	background-color:#33CCCC;
+    FONT-FAMILY: Tahoma, 'Microsoft Sans Serif', Arial;
+    BORDER-BOTTOM: #C9AFA0 4px solid;
+    BORDER-RIGHT: #C9AFA0 4px solid;
+    BORDER-LEFT: #C9AFA0 1px solid;
+	BORDER-TOP: #C9AFA0 1px solid;
+    /*BORDER-BOTTOM: #afc4d5 4px solid;
+    BORDER-RIGHT: #afc4d5 4px solid;
+    BORDER-LEFT: #afc4d5 1px solid;
+	BORDER-TOP: #FFFFFF;*/
+}
+TABLE.tFormulario TH{
+    color:#183021; 
+    font-weight:bold;
+	text-align:right;
+}
+TABLE.tFormulario td{
+     BORDER-BOTTOM:  #FFFFFF;
+}
+TABLE.tFormulario TD,TABLE.tFormulario TH{
+background-color:#F7F8F2;
+    /*BORDER-TOP: #afc4d5 1px solid;*/
+    FONT-SIZE: 11px;
+    BORDER-LEFT: #FFFFFF;
+    BORDER-RIGHT: #FFFFFF;
+}
+
+.displaytag TABLE.tFormulario td{
+     BORDER-BOTTOM:  #FFFFFF;
+}
+.displaytag TABLE.tFormulario TH{
+background-color:#FFF;	
+}
+.displaytag TABLE.tFormulario TD,.displaytag TABLE.tFormulario TH{
+background-color:#DDDDDD;
+    BORDER-TOP: #C9AFA0 1px solid;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: #FFFFFF;
+    BORDER-RIGHT: #FFFFFF;
+}
+
+TABLE.tLogin{
+    background-color: white;
+    color: #FFFF99; 
+    text-align:center;
+}
+TABLE.tLogin TH, TABLE.tLogin TD{
+ background-color: white;
+}
+TABLE.tLista{
+    background-color: white;
+    color: #FFFF99; 
+    text-align:center;
+}
+TABLE.tLista TH{
+	height:20px; 
+    text-align:center;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    background-color:#3333FF;
+    color:#FFFFFF;
+	vertical-align:middle; 
+}
+TABLE.tLista TD{
+	height:20px; 
+    font-size: 11px;  
+    font-family: Verdana, Arial;
+	background-color:#DDFFFF;
+    BORDER-TOP: #FF9900 ;
+    BORDER-BOTTOM: #0166CB 1px solid;
+	vertical-align:middle; 
+}
+.tLista .head {background:#3366FF url(../images/sort.gif) 6px center no-repeat; cursor:pointer; padding-left:18px}
+.tLista .desc {background:#3333FF url(../images/desc.gif) 6px center no-repeat; cursor:pointer; padding-left:18px}
+.tLista .asc {background:#3333FF url(../images/asc.gif) 6px  center no-repeat; cursor:pointer; padding-left:18px}
+.tLista .head:hover, .tLista .desc:hover, .tLista .asc:hover {color:#fff}
+.tLista .even td {background:#D0F2F2}
+.tLista .odd td {background:#74CEFA}
+
+.cuerpoTabla,.cuerpoTabla TD,.cuerpoTabla TH{
+background-color:#FFFFFF;
+font-size:14px;
+}
+.cuerpoTabla TH{
+text-align:right;}
+.cuerpoTablaV,.cuerpoTablaV TD,.cuerpoTablaV TH{
+background-color:#CEFFE8;
+font-size:14px;
+}
+.cuerpoTablaV TH{
+text-align:right;}
+/** ************************
+****estilos para el legajo
+**************************/
+/*
+table.headLegajo{
+	font-size:12px;
+	font-weight:bold;
+	color:#003300;
+}
+.headLegajo TH{
+	width:150px;
+	text-align:right;
+	font-size:12px;
+	font-weight:bold;
+	color:#003300;
+	background-color:#D6F5DE;
+}*/
+/*.tituliInstancia,#tituloLegajo,#tituloCuaderno,#tituloEjecucion,#tituloEstado,#datosLegajo{background-color:#CCCCCC;}*/
+#tituloLegajo{
+	padding-top:10px;
+	padding-bottom:10px;
+	text-align:center;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:18px;
+	font-weight:bold;
+	color:#000000;
+	font-weight:bold;
+}
+.tituliInstanciaMayor{
+	color:#2E4B30;
+	font-size:14px;
+	font-family:Arial, Helvetica, sans-serif;
+	padding-bottom:10px;
+	padding-top:10px;
+	margin-left:50px;
+	border-left:20px solid #93FFBE;
+	font-weight:bold;
+}
+.tituliInstancia{
+	
+	color:#2E4B30;
+	font-size:14px;
+	font-family:Arial, Helvetica, sans-serif;
+	padding-bottom:10px;
+	padding-top:10px;
+	margin-left:50px;
+	border-left:20px solid #666600;
+	font-weight:bold;
+}
+.Instancia{
+	color:#010F87;
+	background-color:#82C0FF;
+	font-size:14px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	padding-bottom:5px;
+	padding-top:5px;
+	margin-left:10px;
+	margin-right:10px;
+	font-weight:bold;
+	font-weight:bold;
+}
+#tituloCuaderno{
+	color:#003300;
+	font-size:12px;
+	font-weight:bold;
+	border-style:dashed;
+	border-width:1px;
+}
+#tituloEjecucion{
+	color:#2E4B30;
+	font-size:14px;
+	font-family:Arial, Helvetica, sans-serif;
+	padding-bottom:10px;
+	padding-top:10px;
+	margin-left:50px;
+	border-left:20px solid #570402;
+	font-weight:bold;
+}
+#tituloEstado{
+	color:#2E4B30;
+	font-size:14px;
+	font-family:Arial, Helvetica, sans-serif;
+	padding-bottom:10px;
+	padding-top:10px;
+	margin-left:50px;
+	border-left:20px solid #FFFF33;
+	font-weight:bold;
+}
+#datosLegajo{
+font-size:14px;
+font-weight:bold;
+color:#2E4B30;
+}
+#barra_menu{
+padding-bottom:1px;
+padding-top:1px;
+word-spacing:0px;
+background-color:#CECECE;
+}
+.inicio{
+margin-bottom:0px;
+}
+
+#tituloEncabezado{
+	color:#2E4B30;
+	font-size:14px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+}

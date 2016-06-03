@@ -1,0 +1,136 @@
+<%-- Logo, busqueda y menu de categorías --%>
+<%@ page pageEncoding="UTF-8" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<jsp:include page="/Aux?accion=loadcategorias" />
+<div class="header-bottom">
+    <div class="wrap">
+        
+            <c:choose>
+                <c:when test="${not empty usuario && usuario.tipo=='vendedor' }">
+                    <div class="header-bottom-left">
+                        <!-- Logo -->
+                        <div class="logo">
+                            <a href="vendedor/index.jsp"><img src="images/logo2.png" alt=""/></a>
+                        </div>
+
+                        <!-- Menú -->
+                        <div class="menu">
+                            <ul class="megamenu skyblue">
+                                <li class="active grid"><a href="vendedor/index.jsp">Inicio</a></li>
+                                <li><a class="color4" href="javascript:void(0)">Administrar</a>
+                                    <div class="megapanel">
+                                        <div class="col1">
+                                            <div class="h_nav">
+                                                <h4>Ventas</h4>
+                                                <ul>
+                                                    <li><a href="vendedor/ordenes.jsp">Administrar Ventas</a></li>
+                                                </ul>	
+                                            </div>							
+                                        </div>
+                                        <div class="col1">
+                                            <div class="h_nav">
+                                                <h4>Productos</h4>
+                                                <ul>
+                                                    <li><a href="vendedor/productos.jsp">Lista de Productos</a></li>
+                                                    <li><a href="javascript:void(0)">Nuevo Producto</a></li>
+                                                </ul>	
+                                            </div>							
+                                        </div>
+
+                                    </div>
+                                </li>
+                                <li><a class="color4" href="javascript:void(0)">Reportes</a>
+                                    <div class="megapanel">
+                                        <div class="col1">
+                                            <div class="h_nav">
+                                                <h4>Reportes</h4>
+                                                <ul>
+                                                    <li><a target="_blank" href="ReporteClientes">Top Clientes</a></li>
+                                                    <li><a target="_blank" href="ReporteProductos">Productos más vendidos</a></li>
+                                                </ul>	
+                                            </div>							
+                                        </div>
+
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </c:when>
+                <c:otherwise>
+                    <div class="header-bottom-left">
+                        <!-- Logo -->
+                        <div class="logo">
+                            <a href="index.jsp"><img src="images/logo2.png" alt=""/></a>
+                        </div>
+
+                        <!-- Menú -->
+                        <div class="menu">
+                            <ul class="megamenu skyblue">
+                                <li class="active grid"><a href="index.jsp">Inicio</a></li>
+                                <c:forEach items="${categorias}" var="cat">
+
+                                    <li><a class="color4" href="index.jsp?idCategoria=${cat.idCategoria}">${cat.descripcion}</a>
+                                        <div class="megapanel">
+                                            <div class="row">
+                                                <div class="col1">
+                                                    <div class="h_nav">
+                                                        <h4>${cat.descripcion}</h4>
+                                                        <ul>
+                                                            <c:forEach items="${cat.subcategorias}" var="subcat">
+                                                                <li><a href="index.jsp?idSubcategoria=${subcat.idSubcategoria}">${subcat.descripcion}</a></li>
+                                                            </c:forEach>
+                                                        </ul>	
+                                                    </div>							
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                </c:forEach>
+
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <!-- Búsqueda, carrito de compras -->
+                    <div class="header-bottom-right">
+                        <form action="index.jsp">
+                            <div class="search">	  
+                                <input type="text" name="busqueda" class="textbox" value="Buscar" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Buscar';}">
+                                <input type="submit" id="submit" name="submit">
+                                <div id="response"> </div>
+                            </div>
+                        </form>
+
+                        <div class="tag-list">
+                            <ul class="icon1 sub-icon1 profile_img">
+                                <li><a class="active-icon c2" href="carrito.jsp"> </a>
+                                    <ul class="sub-icon1 list">
+                                        <li><h3>Artículos</h3></li>
+                                        <li>
+                                            <p>
+                                                <c:if test="${empty totalart}"><c:set var="totalart" value="0"/></c:if>
+                                                <c:if test="${totalart < 1}">No hay articulos</c:if> 
+                                                <table>
+                                                <c:forEach items="${listacarrito}" var="lis">
+                                                    <tr><td style="width: 100%;">${lis.nombre}</td><td>${lis.precio}</td></tr>
+                                                </c:forEach>
+                                                </table>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="last">
+                                <li><a href="carrito.jsp">Carrito(${totalart})</a></li>
+                                <li> <a href="" onclick="javascript:limpiar()">Limpiar Carrito</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </c:otherwise>
+            </c:choose>
+        <div class="clear"></div>
+    </div>
+</div>

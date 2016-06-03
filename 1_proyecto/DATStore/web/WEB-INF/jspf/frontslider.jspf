@@ -1,0 +1,38 @@
+<%-- Slider de página principal --%>
+<%@ page pageEncoding="UTF-8" %>
+<div id="fwslider">
+    <div class="slider_container">
+        <div class="slide"> 
+            <!-- Slide image -->
+                <img src="images/bannerx.jpg" alt=""/>
+            <!-- /Slide image -->
+            <!-- Texts container -->
+            <div class="slide_content">
+                <div class="slide_content_wrap">
+                    <!-- Text title -->
+                    <h4 class="title">Encuentre lo que busca</h4>
+                    <!-- /Text title -->
+
+                    <!-- Text description -->
+                    <p class="description">Compre con seguridad</p>
+                    <!-- /Text description -->
+                </div>
+            </div>
+            <!-- /Texts container -->
+        </div>
+        <!-- /Duplicate to create more slides -->
+        <div class="slide">
+            <img src="images/bannerx1.jpg" alt=""/>
+            <div class="slide_content">
+                <div class="slide_content_wrap">
+                    <h4 class="title">Venda sus productos</h4>
+                    <p class="description">Aumente su reputación como buen vendedor</p>
+                </div>
+            </div>
+        </div>
+        <!--/slide -->
+    </div>
+    <div class="timers"></div>
+    <div class="slidePrev"><span></span></div>
+    <div class="slideNext"><span></span></div>
+</div>

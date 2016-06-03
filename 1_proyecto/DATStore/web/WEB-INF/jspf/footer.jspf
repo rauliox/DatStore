@@ -1,0 +1,85 @@
+<%-- Pie de página --%>
+<%@ page pageEncoding="UTF-8" %>
+<div class="footer">
+    <div class="footer-top">
+        <div class="wrap">
+            <div class="section group example">
+                <div class="col_1_of_2 span_1_of_2">
+                    <ul class="f-list">
+                        <li><img src="images/2.png"><span class="f-text">Entrega Segura</span><div class="clear"></div></li>
+                    </ul>
+                </div>
+                <div class="col_1_of_2 span_1_of_2">
+                    <ul class="f-list">
+                        <li><img src="images/3.png"><span class="f-text">Atención Personalizada</span><div class="clear"></div></li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="footer-middle">
+        <div class="wrap">
+            <div class="section group example">
+                <div class="col_1_of_f_1 span_1_of_f_1">
+                    <div class="section group example">
+                        <div class="col_1_of_f_2 span_1_of_f_2">
+                            <h3>Sitio de Prueba</h3>
+                            <div class="footer-desc">
+                                <p>Este sitio web es una prueba y no constituye un sitio de venta real.</p>
+                            </div>
+                        </div>
+                        <div class="col_1_of_f_2 span_1_of_f_2">
+                            <h3>En contrucción</h3>
+                            <div class="footer-desc">
+                                <p>Este sitio web está en construcción.</p>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                
+                <div class="col_1_of_f_1 span_1_of_f_1">
+                    <div class="section group example">
+                        <div class="col_1_of_f_2 span_1_of_f_2">
+                            <h3>Descripción</h3>
+                            <div class="footer-desc">
+                                <p>--</p>
+                            </div>
+                        </div>
+                        <div class="col_1_of_f_2 span_1_of_f_2">
+                            <h3>Grupo</h3>
+                            <ul class="f-list1">
+                                <li><a href="#"></a></li>
+                                
+                            </ul>
+                            
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="footer-bottom">
+        <div class="wrap">
+            <div class="copy">
+                <p>© 2014 Adaptado de <a href="http://w3layouts.com" target="_blank">w3layouts</a></p>
+            </div>
+            <div class="f-list2">
+                <ul>
+                    <li class="active"><a href="#">Nosotros</a></li> |
+                    <li><a href="#">Entregas y Devoluciones</a></li> |
+                    <li><a href="#">Términos y Condiciones</a></li> |
+                    <li><a href="#">Contáctenos</a></li> 
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>

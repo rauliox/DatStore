@@ -1,0 +1,57 @@
+<%-- Menú de la parte superior --%>
+<%@ page pageEncoding="UTF-8" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<div class="header-top">
+    <div class="wrap"> 
+        <div class="header-top-left">
+            <div class="cssmenu">
+                <ul>
+                    <c:choose>
+                        <c:when test="${(not empty usuario) && (usuario.tipo == 'vendedor')}">
+                            <li><a href="index.jsp">Comprar</a></li> |
+                            <li class="active"><a href="vendedor/index.jsp">Vender</a></li>
+                        </c:when>
+                        <c:otherwise>
+                            <li class="active"><a href="index.jsp">Comprar</a></li> |
+                            <li><a href="vendedor/index.jsp">Vender</a></li>
+                        </c:otherwise>
+                    </c:choose>
+                </ul>
+            </div>
+        </div>
+        <div class="header-top-right">
+            <div class="cssmenu">
+                <ul>
+                    <c:if test="${not empty usuario}">
+                        <li>Bienvenido(a) ${usuario.nombre}</li>
+                    </c:if>
+                    
+                    <c:choose>
+                        <c:when test="${(not empty usuario) && (usuario.tipo == 'vendedor')}">
+                            <li><a href="vendedor/ordenes.jsp">Mis Ventas</a></li> |
+                            <li><a href="vendedor/productos.jsp">Mis Productos</a></li> |
+                        </c:when>
+                        <c:when test="${(not empty usuario) && (usuario.tipo == 'cliente')}">
+                               <li><a href="cliente/ordenes.jsp">Mis Ordenes</a></li> |
+                            <li><a href="cliente/pagar.jsp">Realizar Pago</a></li> |
+                        </c:when>
+                        <c:otherwise>                            
+                            <li><a href="cliente/pagar.jsp">Realizar Pago</a></li> |
+                        </c:otherwise>
+                    </c:choose>
+                    
+                    
+                    <c:if test="${empty usuario}">
+                        <li><a href="cuenta.jsp">Regístrese</a></li> |
+                        <li><a href="login.jsp">Login</a></li>
+                    </c:if>
+                    <c:if test="${not empty usuario}">
+                        <li><a href="cuenta.jsp">Mi Cuenta</a></li> |
+                        <li><a href="Autenticar?accion=logout">Salir</a></li>
+                    </c:if>
+                </ul>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
